@@ -3,8 +3,13 @@ This script reads the ID3 tag of a music file and adds it to your designated spo
 
 Steps:
 1. Create a playlist on Spotify and note down the playlist ID (the unique URL on your playlist) - if you do this on the web, this would be the url following open.spotify.com/playlist/
-2. Create an app on spotify developer and note down your client ID, client secret. Add a redirect URL as http://localhost/ - you can find this here: https://developer.spotify.com/dashboard
-3. Add the client ID, client secret, and playlist ID to your .env file.
-4. Install dependencies by pip install < requirements.txt 
-5. Run the script in the location of your music files. 
-6. Files with the correct data will be added to the spotify playlist you chose. 
+2. Head to https://developer.spotify.com/dashboard/ and login and "create an app". Note down client ID, client secret. Click settings and add website and redirect as "http://localhost/"
+3. Extract the .env, spotify.py and requirements.txt into the directory with all the music.
+4. Edit .env with your playlist ID, client ID and client secret. 
+5. Create a virtual environment for python by doing "virtualenv venv", if you don't have this installed please install by "apt-get install python3-venv"
+6. Then pip install -r requirements.txt 
+7. Run "python spotify.py YOUR_USERNAME" 
+8. Open link provided in prompt in browser and login and authorize app. 
+9. Copy and paste the URL that you're redirected to into the command prompt. i.e. "http://localhost/?code=AQCSrcYT4Aqnh-DSetAZ9714L9UDX38kwYGIBiAEPP_eNqFHaqY7hqz0QH8wMYqARGiLwo781KNn8zJA2y5UjtzwXsaiqVZTAgxYJgK-B9m0rGeqRnf6l1AwE15yLE4NAZp-Aq--akKCKaiHTTFCD0uRWsogttrnAUp-pVZUGUyoGZPTgEx0tkIdca6jM4wc9r4ZtLGeXO1WqaBLPDIp"
+10. Type "deactivate" to get out of virtual environment. 
+11. Files with the correct data will be added to the spotify playlist you chose. 
