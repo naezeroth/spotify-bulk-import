@@ -22,6 +22,7 @@ Steps:
 
 ![image](https://user-images.githubusercontent.com/43486117/131786010-af3be217-2759-439a-976b-efa70f676194.png)
 Don't worry if it looks like this. Simply copy and paste that URL into your terminal. 
+![image](https://user-images.githubusercontent.com/43486117/131786170-6c53d2fb-8249-41ad-a67d-92e4070ee9d6.png)
 
 10. Type "deactivate" to get out of virtual environment. 
 11. Files with the correct data will be added to the spotify playlist you chose. 
